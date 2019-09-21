@@ -17,7 +17,7 @@ Cylinder::Cylinder(int pin) {
 //***************************************************************************
 //LIBRARY FUNCTIONS:
 //***************************************************************************
-void Cylinder::stroke(int push_time, int release_time) {
+void Cylinder::stroke(unsigned int push_time, unsigned int release_time) {
   if (_stroke_completed == true) // reset timer once at beginning
           {
     digitalWrite(_pin, HIGH);

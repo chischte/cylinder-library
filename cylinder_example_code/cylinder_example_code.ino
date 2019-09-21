@@ -27,6 +27,6 @@ void loop() {
   ExampleCylinder.stroke(1500, 500); // (push time,pull time)
 
   if (ExampleCylinder.stroke_completed()) {
-    // if cylinder has retracted do stuff}
+    // if cylinder stroke is completed, do stuff}
   }
 }

@@ -15,7 +15,7 @@
 class Cylinder {
 public:
   Cylinder(int pin);
-  void stroke(int push_time, int release_time);
+  void stroke(unsigned int push_time, unsigned int release_time);
   void toggle();
   void set(bool set_state);
   bool request_state();
