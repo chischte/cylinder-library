@@ -12,8 +12,7 @@
 
 #include "Arduino.h"
 
-class Cylinder
-{
+class Cylinder {
 public:
   Cylinder(int pin);
   void stroke(int push_time, int release_time);
