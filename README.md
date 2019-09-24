@@ -1,6 +1,6 @@
 # cylinder-library 
 
-**Library to debounce mechanical switches and push buttons and detect button state changes.**
+**Library to control switching valves for pneumatic cylinders .**
 
 
 Library Functions
@@ -32,7 +32,7 @@ Library Functions
 	ExampleCylinder.stroke(1500, 500); // (push time,pull time)
 
 	if (ExampleCylinder.stroke_completed()) {
-      // if cylinder stroke is completed, do stuff}
+      // if stroke is completed, do stuff}
 	}
  
 
