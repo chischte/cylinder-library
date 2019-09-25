@@ -39,7 +39,7 @@ Library Functions
 	ExampleCylinder.invertCylinderLogic(1);
 	// inverts the cylinder states and movements
 
-**An example of how the functions can be used can be found in the example code "cylinder_example_code".**	
+**An example of how the functions can be used can be found in the example code.**	
   
 
 Installation
