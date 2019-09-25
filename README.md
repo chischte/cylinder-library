@@ -34,7 +34,7 @@ Library Functions
       // if stroke is completed, do stuff}
 	}
 
-	// REVERSE CYLINDER LOGIC:
+	// INVERT CYLINDER LOGIC:
 	ExampleCylinder.invertCylinderLogic(1);
 	// inverts the cylinder states and movements
 
