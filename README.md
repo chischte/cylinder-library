@@ -32,7 +32,7 @@ Library Functions
 	// STROKE:
 	ExampleCylinder.stroke(1500, 500); // (push time,pull time)
 	if (ExampleCylinder.stroke_completed()) {
-      // if stroke is completed, do stuff}
+      // if stroke is completed, do stuff
 	}
 
 	// INVERT CYLINDER LOGIC:
