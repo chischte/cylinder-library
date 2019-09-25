@@ -2,7 +2,7 @@
 
 **Library to control switching valves for pneumatic cylinders .**
 
-The library is usefull for all other two-state-actors, such as motors or relays, as well.
+The library can be usefull for all other two-state-actors as well.
 
 Library Functions
 ---------------
