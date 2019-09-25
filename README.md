@@ -30,11 +30,13 @@ Library Functions
 
 	// STROKE:
 	ExampleCylinder.stroke(1500, 500); // (push time,pull time)
-
 	if (ExampleCylinder.stroke_completed()) {
       // if stroke is completed, do stuff}
 	}
- 
+
+	// REVERSE CYLINDER LOGIC:
+	ExampleCylinder.invertCylinderLogic(1);
+	// inverts the cylinder states and movements
 
 **An example of how the functions can be used can be found in the example code "cylinder_example_code".**	
   
