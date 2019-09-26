@@ -14,18 +14,27 @@
 
 class Cylinder {
 public:
+  // FUNTIONS:
   Cylinder(int pin);
   void stroke(unsigned int push_time, unsigned int release_time);
   void toggle();
+  void invertCylinderLogic(bool invertLogic);
   void set(bool set_state);
   bool request_state();
   bool stroke_completed();
 
+  // VARIABLES:
+
 private:
-  int _pin;
-  bool _state;
+  // FUNTIONS:
+  // n.a.
+
+  // VARIABLES:
   unsigned long _prev_time;
+  bool _state;
   bool _stroke_completed = true;
+  int _pin;
+  bool _invertLogic = false;
 };
 
 #endif

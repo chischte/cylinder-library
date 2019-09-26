@@ -2,6 +2,7 @@
 
 **Library to control switching valves for pneumatic cylinders .**
 
+The library can be usefull for all other two-state-actors as well.
 
 Library Functions
 ---------------
@@ -30,13 +31,15 @@ Library Functions
 
 	// STROKE:
 	ExampleCylinder.stroke(1500, 500); // (push time,pull time)
-
 	if (ExampleCylinder.stroke_completed()) {
-      // if stroke is completed, do stuff}
+      // if stroke is completed, do stuff
 	}
- 
 
-**An example of how the functions can be used can be found in the example code "cylinder_example_code".**	
+	// INVERT CYLINDER LOGIC:
+	ExampleCylinder.invertCylinderLogic(1);
+	// inverts the cylinder states and movements
+
+**An example of how the functions can be used can be found in the example code.**	
   
 
 Installation
