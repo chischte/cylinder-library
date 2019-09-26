@@ -24,11 +24,11 @@ Library Functions
 	if (ExampleCylinder.request_state()) {
       // if cylinder is extended, do stuff
 	}
-
+	
 	if (!ExampleCylinder.request_state()) {
       // if cylinder is pulled back, do stuff
 	}
-
+	
 	// STROKE:
 	ExampleCylinder.stroke(1500, 500); // (push time,pull time)
 	if (ExampleCylinder.stroke_completed()) {
