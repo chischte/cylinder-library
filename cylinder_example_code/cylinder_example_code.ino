@@ -29,4 +29,6 @@ void loop() {
   if (ExampleCylinder.stroke_completed()) {
     // if cylinder stroke is completed, do stuff}
   }
+  ExampleCylinder.invertCylinderLogic(1);
+  // inverts the cylinder states and movements
 }

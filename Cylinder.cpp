@@ -20,36 +20,58 @@ Cylinder::Cylinder(int pin) {
 void Cylinder::stroke(unsigned int push_time, unsigned int release_time) {
   if (_stroke_completed == true) // reset timer once at beginning
           {
-    digitalWrite(_pin, HIGH);
+    if (!_invertLogic) {
+      digitalWrite(_pin, HIGH);
+    } else {
+      digitalWrite(_pin, LOW);
+    }
     _state = HIGH;
     _prev_time = millis();
     _stroke_completed = false;
   }
   if (millis() - _prev_time > push_time) {
-    digitalWrite(_pin, LOW);
+    if (!_invertLogic) {
+      digitalWrite(_pin, LOW);
+    } else {
+      digitalWrite(_pin, HIGH);
+    }
     _state = LOW;
     if (millis() - _prev_time > push_time + release_time) {
       _stroke_completed = true; // triggers next cycle state
     }
   }
 }
-//***************************************************************************
+
 bool Cylinder::stroke_completed() {
   return _stroke_completed;
 }
-//***************************************************************************
+
 void Cylinder::toggle() {
   _state = !_state;
-  digitalWrite((_pin), _state);
+  if (!_invertLogic) {
+    digitalWrite(_pin, _state);
+  } else {
+    digitalWrite(_pin, !_state);
+  }
 }
-//***************************************************************************
+
 void Cylinder::set(bool set_state) {
-  digitalWrite(_pin, set_state);
+  if (!_invertLogic) {
+    digitalWrite(_pin, set_state);
+  } else {
+    digitalWrite(_pin, !set_state);
+  }
   _state = set_state;
 }
-//***************************************************************************
+
 bool Cylinder::request_state() {
-  _state = (digitalRead(_pin));
+  if (!_invertLogic) {
+    _state = digitalRead(_pin);
+  } else {
+    _state = !digitalRead(_pin);
+  }
   return _state;
 }
-//***************************************************************************
+void Cylinder::invertCylinderLogic(bool invertLogic) {
+  _invertLogic = invertLogic;
+}
