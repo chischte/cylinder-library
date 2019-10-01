@@ -36,7 +36,7 @@ void Cylinder::stroke(unsigned int push_time, unsigned int release_time) {
       digitalWrite(_pin, HIGH);
     }
     _state = LOW;
-    if (millis() - _prev_time > push_time + release_time) {
+    if (millis() - _prev_time > (push_time + release_time)) {
       _stroke_completed = true; // triggers next cycle state
     }
   }
