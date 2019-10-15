@@ -10,6 +10,7 @@ Library Functions
 	
 	// CREATE AN INSTANCE OF THE LIBRARY CLASS:
 	Cylinder ExampleCylinder(CYLINDER_VALVE_PIN);
+	// the pin will be set as an output pin
 	
 	// PUSH CYLINDER OUT:
 	ExampleCylinder.set(1);
