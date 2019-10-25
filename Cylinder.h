@@ -30,10 +30,10 @@ private:
   // n.a.
 
   // VARIABLES:
-  unsigned long _prev_time;
-  bool _state;
+  unsigned long _prev_time = 0;
+  bool _state = 0;
   bool _stroke_completed = true;
-  int _pin;
+  int _pin = 0;
   bool _invertLogic = false;
 };
 
