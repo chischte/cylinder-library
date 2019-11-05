@@ -40,6 +40,12 @@ Library Functions
 	ExampleCylinder.invertCylinderLogic(1);
 	// inverts the cylinder states and movements
 
+	// MARK STROKE COMPLETED:
+	ExampleCylinder.mark_stroke_completed;
+	// This function is usually not required.
+	// It is to mark a stroke as completed, in case of it has been early aborted, by an emergency stop for example.
+	// Marked as completed, the cylinder will be ready again in the next loop.
+
 **An example of how the functions can be used can be found in the example code.**	
   
 

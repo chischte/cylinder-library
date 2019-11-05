@@ -16,6 +16,7 @@ class Cylinder {
 public:
   // FUNTIONS:
   Cylinder(int pin);
+  void mark_stroke_completed();
   void stroke(unsigned int push_time, unsigned int release_time);
   void toggle();
   void invertCylinderLogic(bool invertLogic);
