@@ -47,7 +47,7 @@ bool Cylinder::stroke_completed() {
 }
 
 void Cylinder::mark_stroke_completed() {
-  _stroke_completed=true;
+  _stroke_completed = true;
 }
 
 void Cylinder::toggle() {
