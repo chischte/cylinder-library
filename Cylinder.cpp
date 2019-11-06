@@ -46,7 +46,12 @@ bool Cylinder::stroke_completed() {
   return _stroke_completed;
 }
 
-void Cylinder::mark_stroke_completed() {
+void Cylinder::abort_stroke() {
+  if (!_invertLogic) {
+    digitalWrite(_pin, LOW);
+  } else {
+    digitalWrite(_pin, HIGH);
+  }
   _stroke_completed = true;
 }
 
