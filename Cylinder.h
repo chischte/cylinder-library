@@ -17,7 +17,7 @@ public:
   // FUNTIONS:
   Cylinder(int pin);
   void abort_stroke();
-  void stroke(unsigned int push_time, unsigned int release_time);
+  void stroke(unsigned long push_time, unsigned long release_time);
   void toggle();
   void invertCylinderLogic(bool invertLogic);
   void set(bool set_state);

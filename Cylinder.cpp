@@ -17,7 +17,7 @@ Cylinder::Cylinder(int pin) {
 //***************************************************************************
 //LIBRARY FUNCTIONS:
 //***************************************************************************
-void Cylinder::stroke(unsigned int push_time, unsigned int release_time) {
+void Cylinder::stroke(unsigned long push_time, unsigned long release_time) {
   if (_stroke_completed == true) // reset timer once at beginning
           {
     if (!_invertLogic) {
