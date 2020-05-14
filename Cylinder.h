@@ -21,7 +21,7 @@ public:
   void toggle();
   void invertCylinderLogic(bool invertLogic);
   void set(bool set_state);
-  bool request_state();
+  bool get_state();
   bool stroke_completed();
 
   // VARIABLES:
