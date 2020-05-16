@@ -73,7 +73,7 @@ void Cylinder::set(bool set_state) {
   _state = set_state;
 }
 
-bool Cylinder::request_state() {
+bool Cylinder::get_state() {
   if (!_invertLogic) {
     _state = digitalRead(_pin);
   } else {

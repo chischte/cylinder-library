@@ -16,11 +16,11 @@ void loop() {
   ExampleCylinder.set(0); // pull cylinder back
   ExampleCylinder.toggle(); // change cylinder state
 
-  if (ExampleCylinder.request_state()) {
+  if (ExampleCylinder.get_state()) {
     // if cylinder is extended, do stuff
   }
 
-  if (!ExampleCylinder.request_state()) {
+  if (!ExampleCylinder.get_state()) {
     // if cylinder is pulled back, do stuff
   }
 
