@@ -9,39 +9,39 @@ Library Functions
 
 	
 	// CREATE AN INSTANCE OF THE LIBRARY CLASS:
-	Cylinder ExampleCylinder(CYLINDER_VALVE_PIN);
+	Cylinder example_cylinder(CYLINDER_VALVE_PIN);
 	// the pin will be set as an output pin
 	
 	// PUSH CYLINDER OUT:
-	ExampleCylinder.set(1);
+	example_cylinder.set(1);
 	
 	// PULL CYLINDER BACK:
-	ExampleCylinder.set(0);
+	example_cylinder.set(0);
 	
 	// CHANGE CYLINDER STATE
-	ExampleCylinder.toggle();
+	example_cylinder.toggle();
 	
 	// REQUEST STATE:
-	if (ExampleCylinder.request_state()) {
+	if (example_cylinder.request_state()) {
       // if cylinder is extended, do stuff
 	}
 	
-	if (!ExampleCylinder.request_state()) {
+	if (!example_cylinder.request_state()) {
       // if cylinder is pulled back, do stuff
 	}
 	
 	// STROKE:
-	ExampleCylinder.stroke(1500, 500); // (push time,pull time)
-	if (ExampleCylinder.stroke_completed()) {
+	example_cylinder.stroke(1500, 500); // (push time,pull time)
+	if (example_cylinder.stroke_completed()) {
       // if stroke is completed, do stuff
 	}
 
 	// INVERT CYLINDER LOGIC:
-	ExampleCylinder.invertCylinderLogic(1);
+	example_cylinder.invert_cylinder_logic(1);
 	// inverts the cylinder states and movements
 
 	// ABORT STROKE:
-	ExampleCylinder.mark_stroke_completed;
+	example_cylinder.mark_stroke_completed;
 	// Sets the cylinder back to its low state and marks the stroke as completed.
 
 **An example of how the functions can be used can be found in the example code.**	

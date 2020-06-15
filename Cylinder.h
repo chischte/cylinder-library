@@ -19,7 +19,7 @@ public:
   void abort_stroke();
   void stroke(unsigned long push_time, unsigned long release_time);
   void toggle();
-  void invertCylinderLogic(bool invertLogic);
+  void invert_cylinder_logic(bool invert_logic);
   void set(bool set_state);
   bool get_state();
   bool stroke_completed();

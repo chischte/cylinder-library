@@ -81,6 +81,6 @@ bool Cylinder::get_state() {
   }
   return _state;
 }
-void Cylinder::invertCylinderLogic(bool invertLogic) {
+void Cylinder::invert_cylinder_logic(bool invertLogic) {
   _invertLogic = invertLogic;
 }

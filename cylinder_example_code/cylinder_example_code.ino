@@ -3,7 +3,7 @@
 const byte CYLINDER_VALVE_PIN = 4;
 
 // CREATE AN INSTANCE OF THE LIBRARY CLASS:
-Cylinder ExampleCylinder(CYLINDER_VALVE_PIN);
+Cylinder example_cylinder(CYLINDER_VALVE_PIN);
 
 void setup() {
   Serial.begin(9600);
@@ -12,23 +12,23 @@ void setup() {
 
 void loop() {
 
-  ExampleCylinder.set(1); // push cylinder out
-  ExampleCylinder.set(0); // pull cylinder back
-  ExampleCylinder.toggle(); // change cylinder state
+  example_cylinder.set(1); // push cylinder out
+  example_cylinder.set(0); // pull cylinder back
+  example_cylinder.toggle(); // change cylinder state
 
-  if (ExampleCylinder.get_state()) {
+  if (example_cylinder.get_state()) {
     // if cylinder is extended, do stuff
   }
 
-  if (!ExampleCylinder.get_state()) {
+  if (!example_cylinder.get_state()) {
     // if cylinder is pulled back, do stuff
   }
 
-  ExampleCylinder.stroke(1500, 500); // (push time,pull time)
+  example_cylinder.stroke(1500, 500); // (push time,pull time)
 
-  if (ExampleCylinder.stroke_completed()) {
+  if (example_cylinder.stroke_completed()) {
     // if cylinder stroke is completed, do stuff}
   }
-  ExampleCylinder.invertCylinderLogic(1);
+  example_cylinder.invert_cylinder_logic(1);
   // inverts the cylinder states and movements
 }
